@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="Images/fav.png" type="image/x-icon">
-    <title>HockeyPower</title>
+    <title>HockeyPower's</title>
     <!-- tailwind and daisy ui link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -22,10 +22,68 @@
             font-family: 'Manrope', sans-serif;
         }
     </style>
+    <!-- tailwind customization -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "btn-orange": '#FF4240',
+                        "text-sm": '#424247',
+                        "text-xl": '#131318',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
 <body>
-
+    <!-- header related parts -->
+    <header class="container lg:w-4/5 mx-auto">
+        <!-- navbar related parts -->
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content z-[1] p-2 shadow text-white bg-gray-800 rounded-box w-auto">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-xl gap-0">HockeyPower<span>’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="cursor-pointer hidden lg:block mr-8"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a class="btn bg-btn-orange text-white hover:text-btn-orange hover:bg-white hover:border-btn-orange">Get Ticket</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- main container related parts -->
+    <main class="container lg:w-4/5 mx-auto"></main>
+    <!-- footer related parts -->
+    <footer></footer>
 </body>
 
 </html>
