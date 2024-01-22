@@ -40,21 +40,21 @@
 
 <body>
     <!-- header related parts -->
-    <header class="container lg:w-4/5 mx-auto">
+    <header class="container lg:w-4/5 mx-auto pt-5">
         <!-- navbar related parts -->
         <nav>
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M4 6h16M4 12h8m-8 6h16" />
                             </svg>
                         </div>
                         <ul tabindex="0"
-                            class="menu menu-sm dropdown-content z-[1] p-2 shadow text-white bg-gray-800 rounded-box w-auto">
+                            class="menu dropdown-content z-[1] p-2 shadow text-white bg-gray-800 rounded-box w-auto">
                             <li><a>Home</a></li>
                             <li><a>About</a></li>
                             <li><a>Pages</a></li>
@@ -62,11 +62,11 @@
                             <li><a>Contact</a></li>
                         </ul>
                     </div>
-                    <a class="btn btn-ghost text-xl gap-0">HockeyPower<span>’</span>s</a>
+                    <a class="btn btn-ghost text-2xl gap-0 lg:text-4xl font-extrabold">HkyPwr<span class="text-btn-orange">’</span>s</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1">
-                        <li><a>Home</a></li>
+                    <ul class="menu menu-horizontal px-1 gap-2">
+                        <li class="text-btn-orange font-bold"><a>Home</a></li>
                         <li><a>About</a></li>
                         <li><a>Pages</a></li>
                         <li><a>Blog</a></li>
@@ -75,7 +75,7 @@
                 </div>
                 <div class="navbar-end">
                     <a class="cursor-pointer hidden lg:block mr-8"><i class="fa-solid fa-magnifying-glass"></i></a>
-                    <a class="btn bg-btn-orange text-white hover:text-btn-orange hover:bg-white hover:border-btn-orange">Get Ticket</a>
+                    <a class="btn bg-btn-orange text-white hover:text-btn-orange hover:bg-white hover:border-btn-orange font-semibold lg:font-bold text-lg lg:text-xl">Get Ticket</a>
                 </div>
             </div>
         </nav>
