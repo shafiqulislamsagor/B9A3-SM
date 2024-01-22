@@ -31,6 +31,7 @@
                         "btn-orange": '#FF4240',
                         "text-sm": '#424247',
                         "text-xl": '#131318',
+                        "text-rgba":'rgba(255, 255, 255, 0.60)',
                     }
                 }
             }
@@ -40,7 +41,7 @@
 
 <body>
     <!-- header related parts -->
-    <header class="container lg:w-4/5 mx-auto pt-5">
+    <header class="container lg:w-4/5 mx-auto pt-6">
         <!-- navbar related parts -->
         <nav>
             <div class="navbar bg-base-100">
@@ -62,7 +63,8 @@
                             <li><a>Contact</a></li>
                         </ul>
                     </div>
-                    <a class="btn btn-ghost text-2xl gap-0 lg:text-4xl font-extrabold">HkyPwr<span class="text-btn-orange">’</span>s</a>
+                    <a class="btn btn-ghost text-2xl gap-0 lg:text-4xl font-extrabold">HkyPwr<span
+                            class="text-btn-orange">’</span>s</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1 gap-2">
@@ -75,10 +77,78 @@
                 </div>
                 <div class="navbar-end">
                     <a class="cursor-pointer hidden lg:block mr-8"><i class="fa-solid fa-magnifying-glass"></i></a>
-                    <a class="btn bg-btn-orange text-white hover:text-btn-orange hover:bg-white hover:border-btn-orange font-semibold lg:font-bold text-lg lg:text-xl">Get Ticket</a>
+                    <a
+                        class="btn bg-btn-orange text-white hover:text-btn-orange hover:bg-white hover:border-btn-orange font-semibold lg:font-bold text-lg lg:text-xl">Get
+                        Ticket</a>
                 </div>
             </div>
         </nav>
+        <!-- carousel related parts -->
+        <section class=" w-11/12 mx-auto pt-7 lg:pt-12 relative">
+            <div class="carousel w-full rounded-2xl">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full" />
+                    <div class="absolute flex gap-4 transform -translate-y-1/2 bottom-[-8%] lg:bottom-[5%] left-[34%] lg:left-[5%]">
+                        <a href="#slide3"
+                            class="btn btn-circle bg-text-xl text-white hover:bg-white hover:text-text-xl hover:border-text-xl border-text-xl"><svg
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-4 lg:w-6 h-4 lg:h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                            </svg>
+                        </a>
+                        <a href="#slide2"
+                            class="btn btn-circle bg-text-xl text-white hover:bg-white hover:text-text-xl hover:border-text-xl border-text-xl"><svg
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-4 lg:w-6 h-4 lg:h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full" />
+                    <div class="absolute flex gap-4 transform -translate-y-1/2 bottom-[-8%] lg:bottom-[5%] left-[34%] lg:left-[5%]">
+                        <a href="#slide1"
+                            class="btn btn-circle bg-text-xl text-white hover:bg-white hover:text-text-xl hover:border-text-xl border-text-xl"><svg
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-4 lg:w-6 h-4 lg:h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                            </svg>
+                        </a>
+                        <a href="#slide3"
+                            class="btn btn-circle bg-text-xl text-white hover:bg-white hover:text-text-xl hover:border-text-xl border-text-xl"><svg
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-4 lg:w-6 h-4 lg:h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full" />
+                    <div class="absolute flex gap-4 transform -translate-y-1/2 bottom-[-8%] lg:bottom-[5%] left-[34%] lg:left-[5%]">
+                        <a href="#slide2"
+                            class="btn btn-circle  bg-text-xl text-white hover:bg-white hover:text-text-xl hover:border-text-xl border-text-xl"><svg
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-4 lg:w-6 h-4 lg:h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                            </svg>
+                        </a>
+                        <a href="#slide1"
+                            class="btn btn-circle  bg-text-xl text-white hover:bg-white hover:text-text-xl hover:border-text-xl border-text-xl"><svg
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-4 lg:w-6 h-4 lg:h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full  lg:w-1/2 p-4 lg:p-7 rounded-2xl bg-text-xl text-white space-y-4 lg:absolute right-8 bottom-8">
+                <h3 class="font-extrabold text-lg lg:text-2xl">Meet all the heroes from the field</h3>
+                <p class="font-medium text-text-rgba text-sm lg:text-base">Keep in mind that the popularity of players can vary based on personal preferences. </p>
+            </div>
+        </section>
     </header>
     <!-- main container related parts -->
     <main class="container lg:w-4/5 mx-auto"></main>
